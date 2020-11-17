@@ -20,5 +20,5 @@ function calcularCargaElectrica(){
     var a = parseFloat(document.getElementById('a').value);
     var Q;
     Q = i * a;
-    document.getElementById("respuestaFuerza").innerHTML = "La carga electrica es: " + Q;
+    document.getElementById("respuestaCargaElectrica").innerHTML = "La carga electrica es: " + Q;
 }

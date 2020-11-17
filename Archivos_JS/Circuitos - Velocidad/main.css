@@ -14,10 +14,11 @@
     color: black;
 }
 #divVelocidad{
+    float: left;
     margin-top: 50px;
     margin-left: 50px;
     width: 500px;
-    height: 400px;
+    height: 450px;
     border: 1px solid;
     border-color: black;
     border-radius: 15px;
@@ -35,10 +36,15 @@
     margin-top: 50px;
     margin-left: 1150px;
     width: 500px;
-    height: 400px;
+    height: 450px;
     border: 1px solid;
     border-color: black;
     border-radius: 15px;
+}
+.principal{
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
 }
 .textoDeDivs{
     text-align: center;
