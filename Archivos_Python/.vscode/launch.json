@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - determinantes",
+            "request": "launch",
+            "mainClass": "determinantes"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lol",
+            "request": "launch",
+            "mainClass": "lol"
+        }
+    ]
+}

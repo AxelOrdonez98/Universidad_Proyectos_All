@@ -1,0 +1,66 @@
+h1 {
+    color: rgb(165, 165, 165);
+    font-family: Arial;
+    text-decoration: underline;
+    padding: 30px;
+    text-align: center;
+}
+
+div.gallery {
+    margin: 20px;
+    border: 1px solid #79F2BA;
+    margin: auto;
+    width: 200px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    border-style: solid;
+    background-color: #79F2BA;
+    border-radius: 20px;
+    margin: auto;
+    text-align: right;
+    color: black;
+    padding: 10px;
+    font-style: italic;
+}
+
+* {
+    font-family: Arial;
+}
+
+table {
+    background-color: #79F2BA;
+}
+tr :hover{
+    background-color: #8C884D;
+}
+
+.tachado {
+    text-decoration: underline;
+}
+
+.c {
+    font-style: italic;
+    font-size: .75em;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.lista {
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+p {
+    font-family: Arial;
+    border: black;
+}

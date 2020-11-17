@@ -1,0 +1,24 @@
+Bien, para que esto sea así, lo primero que debemos abrir es nuestro editor de texto preferido para crear un fichero llamado nombre_del_programa.desktop. Por ejemplo, con gedit como en nuestro caso, y tú sustituye “nombre_del_programa” por el nombre del programa en cuestión del que estés intentando crear un acceso directo. La ubicación en donde debes guardar este fichero es en /usr/share/applications tal cual te indicamos en la siguiente inserción de texto:
+
+1
+	
+sudo nano /usr/share/applications/nombre_del_programa.desktop
+
+En el interior del fichero creado debemos insertar el siguiente código (sustituye el texto por lo que necesites en cada caso, ya que aquí lo presento de una forma genérica para que sirva para cualquier caso):
+	
+[Desktop Entry]
+ 
+Name=Nombre_del_programa
+ 
+Comment=Comentario_que_quieras_hacer_sobre_el_programa
+ 
+Exec=/dirección/del/programa/en/cuestion
+ 
+Icon=/dirección/del/icono/del/programa/.ico/si/existe
+ 
+Terminal=false
+ 
+Type=Application
+
+Guardamos y listo. Ahora al buscarlo en el Dash de Unity nos aparecerá y si le damos un clic se nos abrirá. Si lo quieres anclar al lanzador para hacerlo aun más rápido, puedes hacerlo durante la apertura del programa, haciendo clic sobre el icono que aparece en el lanzador por estar abierto y pulsando en “Mantener en el lanzador”.
+

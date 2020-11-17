@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Gothic';
+    src        : url('Font/CenturyGothic.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src        : url('Font/Ubuntu-Regular.ttf');
+}
+
+body {
+    background-image : url('Img/navidad.jpg');
+    background-repeat: no-repeat;
+    background-size  : cover;
+}
+
+table {
+    font-family : 'Gothic';
+    border-style: solid;
+    margin      : auto;
+    width       : 500px;
+    height      : auto;
+    font-size   : 20px;
+}
+
+td {
+    text-align: center;
+}
+
+td:hover {
+    background-color: #FFF373;
+}
+
+.mes {
+    font-size  : 50px;
+    font-family: 'Ubuntu';
+}
+
+.diaSem {
+    background   : lightskyblue;
+    color        : midnightblue;
+    border-bottom: solid;
+}
+
+.diaFuera {
+    font-family: Arial, Helvetica, sans-serif;
+    color      : #666666;
+}
+
+.diaFest {
+    color: red;
+}
+
+.calen {
+    background-color: lightskyblue;
+}

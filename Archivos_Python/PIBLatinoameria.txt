@@ -1,0 +1,44 @@
+América Latina y el Caribe
+Nombre del país	Año Más Reciente	Valor Más Reciente	
+Antigua y Barbuda	2018	16.727,0	
+Argentina	2018	11.683,9	
+Aruba	2017	25.630,3	
+Bahamas	2018	32.217,9	
+Barbados	2018	17.949,3	
+Belice	2018	4.884,7	
+Bolivia	2018	3.548,6	
+Brasil	2018	8.920,8	
+Chile	2018	15.923,4	
+Colombia	2018	6.667,8	
+Costa Rica	2018	12.027,4	
+Cuba	2018	8.821,8	
+Curacao	2018	19.567,9	
+Dominica	2018	7.691,3	
+Ecuador	2018	6.344,9	
+El Salvador	2018	4.058,3	
+Granada	2018	10.640,5	
+Guatemala	2018	4.549,0	
+Guyana	2018	4.979,0	
+Haití	2018	868,3	
+Honduras	2018	2.500,1	
+Isla de San Martín (parte francesa)			
+Islas Caimán	2017	81.124,5	
+Islas Turcas y Caicos	2018	27.142,2	
+Islas Vírgenes (EE.UU.)	2017	35.938,0	
+Islas Vírgenes Británicas			
+Jamaica	2018	5.354,2	
+México	2018	9.673,4	
+Nicaragua	2018	2.028,9	
+Panamá	2018	15.575,1	
+Paraguay	2018	5.821,8	
+Perú	2018	6.941,2	
+Puerto Rico	2018	31.651,3	
+República Dominicana	2018	8.050,6	
+Saint Kitts y Nevis	2018	19.275,4	
+San Vicente y las Granadinas	2018	7.361,4	
+Santa Lucía	2018	10.566,0	
+Sint Maarten (Dutch part)			
+Suriname	2018	6.234,0	
+Trinidad y Tobago	2018	17.129,9	
+Uruguay	2018	17.278,0	
+Venezuela	2014	16.054,5

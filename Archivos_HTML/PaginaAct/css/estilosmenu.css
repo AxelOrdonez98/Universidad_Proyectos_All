@@ -1,0 +1,85 @@
+#wrapper{
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    background-color: #02733E;
+   
+}
+#banner{
+    background-color: #79F2BA;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+div.imagenL img{
+    margin: 5px;
+    width: 102px;
+    margin-left: 40px;
+    float: left;
+    
+}
+.nombre{
+    float: left;
+    margin: 35px;
+    margin-left: 250px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.menusup{
+    background-color: #8C884D;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.menusup a{
+    float: left;
+    background-color: #8C884D;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(172, 172, 172);
+
+}
+
+.menusup a:hover{
+    background-color:#593F1E;
+    color:rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.menusup a.active{
+    background-color:#593F1E;
+    color:white;
+}
+.menusup a.active:hover{
+    background-color: #593F1E;
+    color:rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+#footer{
+    background-color: #8C884D;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+.clearer{
+    clear: both;
+}
+
+.textCopy{
+    margin-top: 5%;
+    padding: 10px;
+    margin-right: 19%;
+    margin-left: 80%;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+.clearer{
+    clear: both;
+}

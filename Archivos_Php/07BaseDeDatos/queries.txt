@@ -1,0 +1,30 @@
+--Regresa todas las ventas y los nombres de los vendedores
+select v.idVenta, v.fecha, v.monto, u.nombre
+from venta v inner join usuario u on v.idUsuario = u.idUsuario
+
+--Muestra los usuarios y las sucursales a las que pertenecen
+select  u.nombre, s.nombre
+from usuario u inner join sucursal s on s.idSucursal = u.idsucursal
+
+--Crea la vista vListaUsrs 
+create view vListaUsrs as select u.nusr, u.pwd from usuario u
+
+-- Todas las ventas de los usuarios de una sucursal
+select *
+from venta v
+where v.idUsuario in (
+select u.idUsuario
+from usuario u inner join sucursal s on u.idSucursal = s.idSucursal and s.nombre = 'Hidalgo'
+)
+
+
+
+CODIGO HTML para crear un comboBox de sucursales
+<div>
+  <label for="pais">Pais:<label/>
+  <select id="pais" name="cmbPais" required>
+    <option value="">- - -</option>
+    <?php include("select_sucursal.php"); ?> // Este hace un query y pinta los option que faltan
+  </select>
+</div>
+

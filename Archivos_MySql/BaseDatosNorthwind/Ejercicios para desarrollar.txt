@@ -1,0 +1,46 @@
+Ejercicios para crear pantallas con PHP sobre la BD Northwind
+
+1
+Crear una pantalla que muestre el detalle de la orden de compra que indique el usuario. 
+Para ello se captura el número de orden y se muestra el encabezado de la orden y el listado de su detalle.
+
+2
+Crear una pantalla para el mantenimiento del catálogo de productos. Esta debe permitir agregar nuevos productos y se debe mostrar el listado completo de productos.
+Las categorías y los proveedores deben mostrarse en un combo.
+
+3
+Crear una pantalla que muestre todas las órdenes de compra que elaboradas por el empleado que seleccione el usuario. 
+Para ello el usuario selecciona a uno de los empleados de un combobox y con ello se muestra un listado con el encabezado de las órdenes de compra que elaboró.
+
+4
+Crear una pantalla que permita agregar detalles a una orden de compra. 
+Para ello el usuario ingresa el número de la orden de compra a la que va a agrear detalles, 
+se muestran campos para el ingreso de datos (shippers, productos y empleados con combobox), además se muestra su encabezado y la lista de sus detalles.
+
+5
+Crear una pantalla que muestre todas las regiones que son atendidas por los empleados que vivan en el país que seleccione el usuario. 
+Para ello el usuario selecciona uno de los países de un combobox y con ello se muestra un listado con el nombre del empleado, su país, su ciudad su domicilio y el nombre las regiones que atiende.
+
+6
+Crear una pantalla que permita consultar cuales son los subordinados de un jefe. 
+Para ello el usuario selecciona en un combobox el nombre de uno de los empleados que tiene personal a su cargo y entonces se muestra el listado de los empleados que este tiene a su cargo.
+Se muestra nombre completo, puesto (title), telefono, pais, ciudad y region.
+
+7
+Crear una pantalla que muestre todas las órdenes de compra elaboradas por los empleados que cumplan años en el mes que seleccione el usuario. 
+Para ello el usuario selecciona el nombre del mes de un combobox que muestra los nombres de los meses en orden y con ello se muestra 
+un listado con el encabezado de las órdenes de compra creadas por esos empleados.
+Al principio Se debe mostrar el nombre del empleado, luego va el encabezado de la orden de compra y se agrega el nombre del cliente.
+
+8
+Crear una pantalla que muestre todos los productos elaborados por el proveedor que seleccione el usuario. 
+Para ello el usuario selecciona a uno de los proveedores de un combobox y con ello se muestra un listado con los productos que elabora.
+
+
+9
+Crear una pantalla que muestre todas las órdenes de compra hechas por clientes de cierto páis que seleccione el usuario. 
+Para ello el usuario selecciona uno de los países de un combobox y con ello se muestra un listado con el encabezado de las órdenes de compra creadas pos esos clientes.
+Al principio Se debe mostrar el nombre del país y del cliente, luego va el encabezado de la orden de compra.
+
+
+

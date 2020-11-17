@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Página con javaScript</title>
+    <style>
+    </style>
+    <head>
+        <script languaje="javascript">
+            function clase(num) {
+                if (num > 0)
+                    document.write("<h1><br>" + "EL numero " + num + " es positivo" + "</h1>");
+                else if (num < 0)
+                    document.write("<h1><br>" + "EL numero " + num + "  es negativo" + "</h1>");
+                else
+                    document.write("<h1><br>" + "EL numero es nulo" + "</h1>");
+            }
+        </script>
+    </head>
+<body>
+    <script languaje="javascript">
+        var num;
+        num = prompt("Introduce numero", "");
+        clase(num);
+    </script>
+</body>
+</html>

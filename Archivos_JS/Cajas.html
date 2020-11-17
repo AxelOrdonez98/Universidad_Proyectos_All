@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajas</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .caja{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            font-size: 50px;
+            border-color: black;
+            color: black;
+            background: white;
+        }
+        .negro{
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja" center>1</div>
+    <div class="caja">2</div>
+    <div class="caja">3</div>
+    <div class="caja">4</div>
+    <script>
+        var cajas=document.getElementsByClassName("caja");
+        function color(){
+            this.classList.toggle("negro");
+        }
+        for(var i=0;i<cajas.length;i++){
+            cajas[i].addEventListener("click",color)
+        }
+    </script>
+</body>
+</html>

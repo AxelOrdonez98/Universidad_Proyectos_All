@@ -1,0 +1,14 @@
+h1 {
+    color:rgb(76, 0, 135);
+}
+.cuadrito{
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 155);
+}
+.alv{
+    width: 600px;
+    height: 50px;
+    background: rgb(76, 0, 135);
+    color: darkgrey;
+}

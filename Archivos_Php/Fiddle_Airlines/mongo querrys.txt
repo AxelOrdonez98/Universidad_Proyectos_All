@@ -1,0 +1,111 @@
+use test
+db.materiales.insert({
+    '_id' : 1,
+    'bulto_Cemento' : '25 kg',
+    'marca' : 'cemex',
+    'precio': 500,
+    'cantidad' : 393
+})
+
+db.materiales.find({'precio':{'$lt':4304}}).pretty()
+
+db.materiales.find({'precio':{'$gt':1000}}).pretty()
+
+db.materiales.find({'cantidad':{'$ne':50}}).pretty()
+
+db.materiales.find({'precio':{'$gte':200, '$lte':2000}}).pretty()
+
+db.materiales.find({'marca':'cemex'}).pretty()
+
+db.materiales.find({'marca':{'$ne':'cemex'}}).pretty()
+
+---------------------------------------------------------------------------
+db.articulos.insertMany([
+{_id:1, nombre:"logitech g204", rubro:"teclado",precio:4000,stock:4},
+{_id:2, nombre:"logitech g533", rubro:"auriculares",precio:3500,stock:7},
+{_id:3, nombre:"HP m566", rubro:"impresora",precio:6500,stock:9},
+{_id:4, nombre:"logitech PTL", rubro:"impresora",precio:6000,stock:44},
+{_id:5, nombre:"logitech g900", rubro:"mouse",precio:5000,stock:90},
+{_id:6, nombre:"logitech g904", rubro:"mouse",precio:6000,stock:15},
+{_id:7, nombre:"logitech g605", rubro:"auriculares",precio:4300,stock:2},
+{_id:8, nombre:"Epson KTm45", rubro:"impresora",precio:2000,stock:3},
+{_id:9, nombre:"logitech g550", rubro:"teclado",precio:4400,stock:12},
+{_id:10, nombre:"logitech g233", rubro:"teclado",precio:3300,stock:20}])
+
+db.articulos.find().pretty()
+
+db.articulos.find({rubro:{$ne:"impresora"}})
+
+db.articulos.find({rubro:"mouse"})
+
+db.articulos.find({precio:{$gte:5000}})
+
+db.articulos.find({$and:[{rubro:"impresora"},{precio:{$gte:4050}}]})
+
+db.articulos.find({stock:{$gte:0,$lte:4}})
+---------------------------------------------------------------------------
+db.users.insert({
+    "direccion": {
+        "ciudad": "Los Angeles",
+        "estado": "California",
+        "codigoPostal": "123"
+        },
+    "tareas": [
+        "musica",
+        "escribir",
+        "leer"
+        ],
+    "nombre": "Tony Stark"
+})
+
+db.users.createIndex({"tareas":1})
+
+db.users.find({tareas:"escribir"}).pretty()
+
+db.users.find({tareas:"escribir"}).explain()
+
+db.users.createIndex({"direccion.ciudad":1,"direccion.estado":1,"direccion.codigoPostal":1})
+
+db.users.find({"direccion.ciudad":"LosAngeles","direccion.estado":"California"}).pretty()
+---------------------------------------------------------------------------
+{ "_id" : ObjectId("5ed03584cdb1a0fd0029f020"), "tipo" : "CD", "Titulos" : [ "adios mi barco", "Pajaritos" ] }
+gatitopitiYesterday at 8:56 PM
+db.multimedia.aggregate({$match:{"titulo":"Matrix"}},{$project:{"titulo":1,"actores":1}})
+db.multimedia.aggregate({$match:{"titulo":"Matrix"}},{$project:{"titulo":1,"actores":1}},{$unwind:"$actores"})
+gatitopitiYesterday at 9:04 PM
+la de arriba es la 3
+4)          db.multimedia.aggregate({$match:{"titulo":"Matrix"}},{$project:{"titulo":1,"actores":1}},{$unwind:"$actores"},{$sort:{"actores":1}},{$skip:3})
+2)      db.multimedia.aggregate({"$match":{"tipo":"DVD"}},{$group:{"_id":"$estreno",count:{$sum:1}}},{$project:{"_id":0,estreno:"$_id",total:"$count"}})
+5)         db.multimedia.distinct("titulo")
+5)   db.multimedia.distinct("estreno")
+5)      db.multimedia.distinct("tipo")
+gatitopitiYesterday at 9:43 PM
+7)  db.multimedia.insert({"tipo":"DVD","titulos":"Blade Runner","estreno":1967})
+
+db.multimedia.insert({"tipo":"DVD","titulos":"Batman","estreno":1989})
+
+db.multimedia.insert({"tipo":"DVD","titulo":"Superman","estreno":1996})
+DarkSolrakYesterday at 9:43 PM
+alachaval
+gatitopitiYesterday at 9:43 PM
+la 6 no me salio
+:c
+1)db.multimedia.insert({"tipo":"CD","Artistas":"los piratas","titulo":"Recuerdos","canciones":[{"capitulo":1,"titulo":"adios mi barco","longitud":"3:20"},{"capitulo":2,"titulo":"Pajaritos","longitud":"4:15"}]})
+
+db.multimedia.insert({"tipo":"DVD","titulo":"Matrix","estreno":1999,"actores":["keanu reeves","Carry-Anne Moss","Laurence Fishburne","Hugo Weaving","Gloria Foster","Joe Pantolino"]})
+1)   { "_id" : ObjectId("5ed03584cdb1a0fd0029f020"), "tipo" : "CD", "Titulos" : [ "adios mi barco", "Pajaritos" ] }
+ntc ese no era el comando :v
+DarkSolrakYesterday at 9:47 PM
+efe
+gatitopitiYesterday at 9:50 PM
+8)
+db.multimedia.group({key:{"titulo":true},cond:{tipo:"DVD"},initial:{Total:0},reduce: function(items,prev){prev.Total +=1}})
+pero no me da nada
+no tengo la menor idea de porque no me da intentale tu y si jala me lo pasas plox
+gatitopitiYesterday at 10:06 PM
+7) db.multimedia.group({key:{"titulo":true},initial:{Total:0}, reudce: function(items,prev){prev.Total +=1}})
+tampoco me sale
+gatitopitiYesterday at 10:14 PM
+8) var map= function(){var key=this.Titulo; var value={"total": this.estreno};emit(key,value);};var reduce = function(keys,values){var reduced={totalpelis:0};for(var i=0;i<values.length;i++){reduced.totalpelis += values[i].total}return reduced;}
+db.articulos.mapReduce(mapa,reduce,{out: "resultado",query:{"tipo":"DVD"}})
+---------------------------------------------------------------------------

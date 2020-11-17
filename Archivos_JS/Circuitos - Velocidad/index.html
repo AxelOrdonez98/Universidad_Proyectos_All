@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Circuitos</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="divTrabajo">
+        <h2  class="textoDeDivs">Calcular la velocidad</h2>
+        <h4 class="textoDeFormula">V=dW/dQ</h4>
+        <div>
+            <label class="labes">Ingresa el trabajo (W):</label>
+            <br><br>
+            <input type="number" id="Trabajo"> 
+        </div>
+        <br>
+        <div>
+            <label class="labes">Ingresa la carga electrica (Q):</label>
+            <br><br>
+            <input type="number" id="Carga">
+        </div>
+        <br><br>
+        <button class="Calcular" onclick="calcular()">Calcular</button>
+        <br><br>
+        <div id="respuesta"></div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

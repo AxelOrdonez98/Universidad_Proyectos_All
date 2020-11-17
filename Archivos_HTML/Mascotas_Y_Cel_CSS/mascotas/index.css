@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../Font/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('../Font/Century_Gothic/CenturyGothic.ttf');
+}
+
+body {
+    background-color: #BF73FF;
+    padding: 2em;
+}
+
+table {
+    -webkit-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    color: #CCCCFF;
+    margin: auto;
+    background-color: #688AE8;
+}
+
+td:hover, th:hover {
+    background-color: #BF73FF;
+    -webkit-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+div:hover{
+    background-color: #BF73FF;
+    -webkit-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -11px 9px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ContParrafo {
+    display: auto;
+    padding: 16px;
+    background-color: #688AE8;
+    border: black;
+    border: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.titulo {
+    margin: auto;
+    font-family: 'Ubuntu';
+    color: #CCCCFF;
+    font-size: 2cm;
+    text-align: center;
+    text-shadow: -5px 5px black;
+}
+
+.imgInicio {
+    display: block;
+    margin: auto;
+}
+
+.inicio {
+    color: #CCCCFF;
+    margin: auto;
+    font-family: 'Gothic';
+    font-weight: bold;
+}
+
+.contenedor {
+    display: auto;
+    padding: 16px;
+    background-color: #688AE8;
+    border: black;
+    border: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.parrafo {
+    color: #CCCCFF;
+    margin: auto;
+    font-family: 'Gothic';
+}

@@ -1,0 +1,113 @@
+<div class="jumbotron mt-4 center">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Nuevo Aeropuerto</h3>
+        </div>
+        <div class="card-body">
+            <form action="/aeropuerto/nuevo-aeropuerto" method="POST">
+                <h3>Datos del aeropuerto</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad del aeropuerto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ciudad del aeropuerto" name="ciudad-aeropuerto"
+                        autofocus>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Direccion del aeropuerto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la direccion del aeropuerto" name="direccion-aeropuerto">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Telefono aeropuerto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el telefonoo del aeropuerto" name="telefono-aeropuerto">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Id del aeropuerto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el id mundial del aeropuerto" name="id-aeropuerto">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de aeroopuerto en la ciudad</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero dado por consulado internacional de viaje y turismo" name="numero-de-aeropuerto">
+                </div>
+                
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Capacidad maxima de viajeros</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la capacidad maxima de viajeros en el aeropuerto" name="capacidad-maxima-de-viajeros">
+                </div>
+                
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de permiso de la ciudad</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de autorizacion de la ciudad" name="numero-permiso-ciudad">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de aeriloneas</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de aerolineas establecidas" name="numero-de-aerolineas">
+                </div>
+
+                <br>
+                <h3>Dato de la pista de aterrizaje</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tamaño de la pista</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el tamaño de la pista de aterrizaje" name="tamano-pista">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de torres de control</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de torres de control que tiene la pista" name="numero-de-torres-de-control">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de portaaviones</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de angares disponibles en el aeropuerto" name="numero-de-portaaviones">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de pavimento</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el tipo de pavimento en la pista" name="tipo-de-pavimeno">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Señalizaciones completas en pista de aterrizaje</label>
+                    <select class="custom-select" name="senalizacion-pista-aeropuerto">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Iluminacion completa en pista de aterrizaje</label>
+                    <select class="custom-select" name="iluminacion-pista-aeropuerto">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="form-grup">
+                    <button class="btn btn-warning">
+                        Ingresar datos
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="jumbotron mt-4">
+        <h5>Siguenos en nuestras rede sociales!</h5>
+        <button type="button" class="btn btn-outline-primary">Facebook</button>
+        <button type="button" class="btn btn-outline-info">Twitter</button>
+        <button type="button" class="btn btn-outline-danger">Youtube</button>
+        <button type="button" class="btn btn-outline-warning">Snapchat</button>
+        <button type="button" class="btn btn-outline-secondary">Instagram</button>
+    </div>
+</footer>
