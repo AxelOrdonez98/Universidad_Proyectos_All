@@ -14,7 +14,6 @@
     color: black;
 }
 #divVelocidad{
-    float: left;
     margin-top: 50px;
     margin-left: 50px;
     width: 500px;
@@ -42,9 +41,8 @@
     border-radius: 15px;
 }
 .principal{
-    justify-content: center;
-    align-items: center;
-    padding: .2rem;
+    display: flex;
+    flex-direction:row ;
 }
 .textoDeDivs{
     text-align: center;
